@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import 'core/variables';
+@import 'core/mixins-functions';
+@import 'core/general';
+@import 'core/buttons';
+@import 'core/utilities';
+
+// HOME
+@import 'home/navbar';
+@import 'home/showcase';
+@import 'home/stats';
+@import 'home/cli';
+@import 'home/cloud';
+@import 'home/languages';
+@import 'home/footer';
+@import 'home/MQ';
+@import 'home/animations';
+
+// FEATURES & DOCS
+@import 'features-docs/head';
+@import 'features-docs/subhead';
+@import 'features-docs/main';
+@import 'features-docs/docs-head';
+@import 'features-docs/MQ';
+

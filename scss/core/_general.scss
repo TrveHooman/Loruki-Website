@@ -1,0 +1,39 @@
+* {
+  @include spacing-reset;
+}
+
+body {
+  font-family: $lato;
+  color: $text-primary-color;
+  line-height: $lh-base;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: $text-primary-color;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: $lh-sm;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+code, pre {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+}

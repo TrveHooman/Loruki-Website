@@ -1,0 +1,28 @@
+// Colors
+$primary-color: #047aed;
+$secondary-color: #1c3fa8;
+$dark-color: #002240;
+$light-color: #f4f4f4;
+$success-color: #5cb85c;
+$error-color: #d9534f;
+
+// Color Pallete
+$color: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "dark": $dark-color,
+  "light": $light-color,
+  "success": $success-color,
+  "error": $error-color
+);
+
+// Text Stuff
+$text-primary-color: #333;
+$text-secondary-color: #444;
+$lato: 'Lato', sans-serif;
+
+$lh-sm: 1.6;
+$lh-base: 1.2;
+
+// box
+$basic-box-shadow: 0 3px 10px rgba($color: #000, $alpha: 0.2);

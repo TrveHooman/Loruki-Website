@@ -1,0 +1,84 @@
+@mixin spacing-reset() {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// Spacings Loops
+
+// @mixin generate($prefix, $property) {
+//   $sizes: (1, 1.5, 2, 3, 4);
+//   $spacing: 1rem;
+  
+//   @for $i from 1 through length($sizes) {
+//     $size: nth($sizes, $i);
+    
+//     .#{$prefix}-#{$i} {
+//       #{property}: $spacing * $size;
+//     }
+//   }
+// }
+
+// $rules: (
+//   (ml, margin-left),
+//   (mt, margin-top),
+//   (mb, margin-bottom),
+//   (mr, margin-right),
+// );
+
+// @each $item in $rules {
+//   @include generate(nth($item, 1), nth($item, 2));
+// }
+
+
+$spacing-amounts: (1, 2, 3, 4, 5);
+$spacing-x: (left, right);
+$spacing-y: (top, bottom);
+
+@each $space in $spacing-amounts {
+    .mx-#{$space} {
+      margin-left: #{$space}rem;
+      margin-right: #{$space}rem;
+    }
+    .my-#{$space} {
+      margin-top: #{$space}rem;
+      margin-bottom: #{$space}rem;
+    }
+    .px-#{$space} {
+      padding-left: #{$space}rem;
+      padding-right: #{$space}rem;
+    }
+    .py-#{$space} {
+      padding-top: #{$space}rem;
+      padding-bottom: #{$space}rem;
+    }
+    .m-#{$space} {
+      margin: #{$space}rem;
+    }
+    .p-#{$space} {
+      padding: #{$space}rem;
+    }
+  }
+  // @each $space in $spacing-amounts {
+  //   @each $direction in $spacing-direction {
+  //     .m-#{str-slice($direction, 0, 1)}-#{$space} {
+  //       margin-#{$direction}: #{$space}px;
+  //     }
+  //     .p-#{str-slice($direction, 0, 1)}-#{$space} {
+  //       padding-#{$direction}: #{$space}px;
+  //     }
+  //   }
+  // }
+
+
+  @each $key, $val in $color {
+    .text-#{$key} {
+      color: $val;
+    }
+  }
+  @each $key, $val in $color {
+    .bg-#{$key} {
+      color: #fff;
+      background-color: $val;
+    }
+  }
